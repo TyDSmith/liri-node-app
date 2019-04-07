@@ -11,15 +11,15 @@ The following node packages are used:
 ## How to use the program:
 **To search Spotify songs run the following:**
 
-    node liri.js spotify-this-song <enter a song choice>
+    node liri.js spotify-this-song <enter a song>
 
 **To search movies from OMDB run the following:**
 
-    node liri.js movie-this <enter a movie choice>
+    node liri.js movie-this <enter a movie>
 
 **To search concerts by band run the following:**
 
-    node liri.js concert-this <enter a band choice>
+    node liri.js concert-this <enter a band>
 
 **Run the below command to read from the random.text file:**
 
