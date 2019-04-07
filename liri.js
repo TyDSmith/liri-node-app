@@ -3,12 +3,15 @@ require("dotenv").config();
 var keys = require("./keys.js");
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
+var axios = require("axios");
+var moment = require('moment');
 
 var verb = process.argv[2];
 var noun = process.argv[3];
 liri();
 
 function liri(){
+
     if(verb === "spotify-this"){
         var spotifyNoun = noun;
  
@@ -40,12 +43,25 @@ function liri(){
 
             }
 
-
-  
           });
 
     }
 
+    if(verb === "concert-this"){
+        var concertArtistNoun = noun;
+        axios.get("https://rest.bandsintown.com/artists/" + concertArtistNoun + "/events?app_id=codingbootcamp").then(
+            function(response) {
+                console.log(response.data);
+     
+                    for(i=0; i < response.data.length; i++){
+                        console.log("Venue: ", response.data[i].venue.name);
+                        console.log("Location: ", response.data[i].venue.city + ", "+ response.data[i].venue.region);
+                        console.log("Date: ", moment(response.data[i].datetime).format('MM/DD/YYYY'));
+                        console.log("-----------");
+                    }
 
-
-}
+                //console.log(response, "*");
+            }
+          
+        )}
+};
