@@ -10,4 +10,4 @@ The following node packages are used:
 
 Screenshots:
 
-[Sublime Spotify](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/sublime-screenshot-spotify.png)
+![Sublime Spotify](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/sublime-screenshot-spotify.png "Description")
