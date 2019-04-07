@@ -60,8 +60,45 @@ function liri(){
                         console.log("-----------");
                     }
 
-                //console.log(response, "*");
             }
           
         )}
+
+        if(verb === "movie-this"){
+            if(noun === undefined){
+                var movieNoun = 'Mr. Nobody';
+            } else{
+                var movieNoun = noun;
+            }
+            axios.get("http://www.omdbapi.com/?t=" + movieNoun + "&y=&plot=short&apikey=trilogy").then(
+                function(response) {
+                    console.log("Title: ", response.data.Title);
+                    console.log("Year: ", response.data.Year);
+
+                    if(response.data.Ratings[0].Value === undefined){
+                        console.log("IMDB Rating: Unavailable")
+                    }else {
+                    console.log("IMDB Rating: ", response.data.Ratings[0].Value);
+                    }
+                    
+                    if(response.data.Ratings[1] === undefined){
+                        console.log("Rotten Tomatoes Rating: Unavailable")
+                    }else {
+                    console.log("Rotten Tomatoes Rating: ", response.data.Ratings[1].Value);
+                    }
+                    
+                    console.log("Country: "+ response.data.Country);
+                    console.log("Language: " + response.data.Language);
+                    console.log("Plot: " + response.data.Plot);
+                    console.log("Actors: " + response.data.Actors);
+                    console.log("-----------");
+
+
+                
+                }
+              
+            )}
+
+
+
 };
