@@ -31,11 +31,9 @@ Sample of the spotify-this function (Searching 'sublime'):
 ![Sublime Spotify](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/sublime-screenshot-spotify.png "Searching sublime with spotify-this")
 
 Sample of the movie-this function (Searching 'yes'):
-![Sublime Spotify](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/sublime-screenshot-spotify.png "Searching yes with movie-this")
+![yes Movie](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/yes-movie-this.png "Searching yes with movie-this")
 
 Sample of the concert-this function (Searching 'dsb'):
-![Sublime Spotify](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/sublime-screenshot-spotify.png "Searching dsb with concert-this")
+![DSB Concert](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/dsb-concert-this.png "Searching dsb with concert-this")
 
-Sample of the do-what-it-says function:
-![Sublime Spotify](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/sublime-screenshot-spotify.png "Searching sublime with spotify-this")
 
