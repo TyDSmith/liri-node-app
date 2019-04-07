@@ -9,15 +9,15 @@ The following node packages are used:
 * [DotEnv](https://www.npmjs.com/package/dotenv)
 
 ## How to use the program:
-**To get a list of Spotify songs run the following command:**
+**To search Spotify songs run the following:**
 
     node liri.js spotify-this-song <enter a song choice>
 
-**To get a list of movies from OMDB run the following command:**
+**To search movies from OMDB run the following:**
 
     node liri.js movie-this <enter a movie choice>
 
-**To get a list of concerts for your favorite band run the following command:**
+**To search concerts by band run the following:**
 
     node liri.js concert-this <enter a band choice>
 
