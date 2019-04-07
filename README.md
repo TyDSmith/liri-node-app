@@ -8,6 +8,34 @@ The following node packages are used:
 * [Moment](https://www.npmjs.com/package/moment)
 * [DotEnv](https://www.npmjs.com/package/dotenv)
 
+## How to use the program:
+**To get a list of Spotify songs run the following command:**
+
+    node liri.js spotify-this-song <enter a song choice>
+
+**To get a list of movies from OMDB run the following command:**
+
+    node liri.js movie-this <enter a movie choice>
+
+**To get a list of concerts for your favorite band run the following command:**
+
+    node liri.js concert-this <enter a band choice>
+
+**Run the below command to read from the random.text file:**
+
+    node liri.js do-what-it-says
+
 Screenshots:
 
-![Sublime Spotify](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/sublime-screenshot-spotify.png "Description")
+Sample of the spotify-this function (Searching 'sublime'):
+![Sublime Spotify](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/sublime-screenshot-spotify.png "Searching sublime with spotify-this")
+
+Sample of the movie-this function (Searching 'yes'):
+![Sublime Spotify](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/sublime-screenshot-spotify.png "Searching yes with movie-this")
+
+Sample of the concert-this function (Searching 'dsb'):
+![Sublime Spotify](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/sublime-screenshot-spotify.png "Searching dsb with concert-this")
+
+Sample of the do-what-it-says function:
+![Sublime Spotify](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/sublime-screenshot-spotify.png "Searching sublime with spotify-this")
+

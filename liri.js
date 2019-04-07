@@ -51,8 +51,6 @@ function liri(){
         var concertArtistNoun = noun;
         axios.get("https://rest.bandsintown.com/artists/" + concertArtistNoun + "/events?app_id=codingbootcamp").then(
             function(response) {
-                console.log(response.data);
-     
                     for(i=0; i < response.data.length; i++){
                         console.log("Venue: ", response.data[i].venue.name);
                         console.log("Location: ", response.data[i].venue.city + ", "+ response.data[i].venue.region);
