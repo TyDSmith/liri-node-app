@@ -8,7 +8,7 @@ var moment = require('moment');
 
 var verb = process.argv[2];
 var noun = process.argv[3];
-liri();
+liri(verb, noun);
 
 function liri(){
 
@@ -100,5 +100,22 @@ function liri(){
             )}
 
 
+
+    if (verb === "do-what-it-says") {
+        var fs = require("fs");
+        
+        fs.readFile("random.txt", "utf8", function(error, data) {
+            if (error) {
+            return console.log('Error occurred: ' + error);
+            }
+
+            var dataArr = data.split(",")
+        
+            var verb = dataArr[0];
+            var noun = dataArr[1];
+
+            liri ();
+        });
+    }
 
 };
