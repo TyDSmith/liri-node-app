@@ -25,7 +25,7 @@ The following node packages are used:
 
     node liri.js do-what-it-says
 
-Screenshots:
+## Screenshots:
 
 Sample of the spotify-this function (Searching 'sublime'):
 ![Sublime Spotify](https://raw.githubusercontent.com/TyDSmith/liri-node-app/master/images/sublime-screenshot-spotify.png "Searching sublime with spotify-this")
